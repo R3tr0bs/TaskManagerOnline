@@ -1,0 +1,27 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="85*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="connectBtn" Content="Connect" Grid.Column="1" Grid.Row="3" Click="Connect"/>
+        <Label x:Name="portLbl" Content="Port:" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="ipLbl" Content="IP addr:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="ipTxt" Text="" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" FontSize="15px"/>
+        <TextBox x:Name="portTxt" Text="" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" FontSize="15px"/>
+
+    </Grid>
+</Window>

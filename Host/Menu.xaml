@@ -1,0 +1,27 @@
+﻿<Window x:Class="Host.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Host"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="163*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="275*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Label Content="IP ADDR:"/>
+        <Label Content="PORT:" Grid.Row="1"/>
+        <TextBox Grid.Column="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Name="ipTxt" FontSize="15px"/>
+        <TextBox Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Name="portTxt" FontSize="15px"/>
+        <Button Content="Start Server" Grid.Column="1" Grid.Row="3" Click="StartServer"/>
+
+    </Grid>
+</Window>
